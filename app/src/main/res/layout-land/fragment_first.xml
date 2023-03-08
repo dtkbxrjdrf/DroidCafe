@@ -47,8 +47,9 @@
         android:layout_marginTop="24dp"
         android:contentDescription="@string/ice_cream_sandwiches_have_chocolate_wafers_and_vanilla_filling"
         android:src="@drawable/froyo_circle"
-        app:layout_constraintTop_toBottomOf="@+id/textintro"
-        tools:layout_editor_absoluteX="244dp" />
+        app:layout_constraintEnd_toStartOf="@+id/froyo"
+        app:layout_constraintStart_toEndOf="@+id/donut"
+        app:layout_constraintTop_toBottomOf="@+id/textintro" />
 
     <ImageView
         android:id="@+id/froyo"
@@ -65,7 +66,9 @@
         android:id="@+id/donut_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/donuts_are_glazed_and_sprinkled_with_candy"
         app:layout_constraintEnd_toStartOf="@+id/ice_cream"
         app:layout_constraintStart_toStartOf="@+id/donut"
@@ -75,7 +78,9 @@
         android:id="@+id/ice_cream_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/ice_cream_sandwiches_have_chocolate_wafers_and_vanilla_filling"
         app:layout_constraintEnd_toStartOf="@+id/froyo"
         app:layout_constraintStart_toEndOf="@+id/donut"
@@ -85,7 +90,9 @@
         android:id="@+id/froyo_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/froyo_is_premium_self_serve_frozen_yogurt"
         app:layout_constraintEnd_toEndOf="@+id/froyo"
         app:layout_constraintStart_toEndOf="@+id/ice_cream"
